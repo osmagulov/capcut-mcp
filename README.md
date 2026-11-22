@@ -25,13 +25,13 @@ CapCut has no public scripting API, so the server writes the draft files (`draft
 Option A — run with `uvx` (no manual install):
 
 ```bash
-uvx --from git+https://github.com/OWNER/capcut-mcp capcut-mcp
+uvx --from git+https://github.com/osmagulov/capcut-mcp capcut-mcp
 ```
 
 Option B — install with `pip`:
 
 ```bash
-pip install git+https://github.com/OWNER/capcut-mcp
+pip install git+https://github.com/osmagulov/capcut-mcp
 ```
 
 This gives you a `capcut-mcp` command. Normally you don't run it yourself: the MCP client starts it.
@@ -53,7 +53,7 @@ Edit `%APPDATA%\Claude\claude_desktop_config.json` and restart Claude completely
   "mcpServers": {
     "capcut": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/OWNER/capcut-mcp", "capcut-mcp"]
+      "args": ["--from", "git+https://github.com/osmagulov/capcut-mcp", "capcut-mcp"]
     }
   }
 }
@@ -66,7 +66,7 @@ If you installed with `pip`, use `"command": "capcut-mcp"` and `"args": []` (or 
 ### Claude Code
 
 ```bash
-claude mcp add capcut -- uvx --from git+https://github.com/OWNER/capcut-mcp capcut-mcp
+claude mcp add capcut -- uvx --from git+https://github.com/osmagulov/capcut-mcp capcut-mcp
 ```
 
 Then ask, for example: *"Make a vertical CapCut draft 'Holiday' from the videos in D:\Videos\Holiday,
@@ -149,13 +149,13 @@ The tests build a draft in a temporary folder via `CAPCUT_DRAFTS_PATH`; CapCut d
 Вариант А — запуск через `uvx` (ставить вручную ничего не нужно):
 
 ```bash
-uvx --from git+https://github.com/OWNER/capcut-mcp capcut-mcp
+uvx --from git+https://github.com/osmagulov/capcut-mcp capcut-mcp
 ```
 
 Вариант Б — установка через `pip`:
 
 ```bash
-pip install git+https://github.com/OWNER/capcut-mcp
+pip install git+https://github.com/osmagulov/capcut-mcp
 ```
 
 Появится команда `capcut-mcp`. Обычно её не запускают руками — её запускает Claude.
@@ -177,7 +177,7 @@ pip install git+https://github.com/OWNER/capcut-mcp
   "mcpServers": {
     "capcut": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/OWNER/capcut-mcp", "capcut-mcp"]
+      "args": ["--from", "git+https://github.com/osmagulov/capcut-mcp", "capcut-mcp"]
     }
   }
 }
@@ -189,7 +189,7 @@ pip install git+https://github.com/OWNER/capcut-mcp
 ### Claude Code
 
 ```bash
-claude mcp add capcut -- uvx --from git+https://github.com/OWNER/capcut-mcp capcut-mcp
+claude mcp add capcut -- uvx --from git+https://github.com/osmagulov/capcut-mcp capcut-mcp
 ```
 
 Потом попросите, например: «Собери в CapCut вертикальный ролик "Отпуск": видео из папки D:\Видео\Отпуск

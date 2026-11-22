@@ -25,6 +25,9 @@ classifiers = [
 [project.optional-dependencies]
 test = ["pytest>=8"]
 
+[project.urls]
+Homepage = "https://github.com/osmagulov/capcut-mcp"
+
 [project.scripts]
 capcut-mcp = "capcut_mcp.server:main"
 

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local data that must never be committed
+test_media/
+models/
+*.onnx
+.claude_backups/
+*.bak*
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
